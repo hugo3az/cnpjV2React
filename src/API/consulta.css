@@ -1,0 +1,206 @@
+/* No seu arquivo "consulta.css" */
+.Consulta {
+    text-align: center;
+    padding: 1rem;
+    overflow-x: hidden;
+    background-color: transparent;
+    /* Evita rolagem horizontal */
+    
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+.h1{
+    border-radius: 20px;
+    padding: 1rem;
+    margin-top: 2rem;
+    justify-content: space-between;
+
+    background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo com opacidade */
+  backdrop-filter: blur(10px); /* Desfoque do efeito de vidro */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 79%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-container {
+    margin-top: 1rem;
+}
+
+.center-button {
+    margin: 1rem;
+    text-align: center;
+}
+
+.center-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-with-icon {
+    display: flex;
+    align-items: center;
+}
+
+.input-with-icon input {
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.input-with-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.company-info {
+    border-radius: 20px;
+    padding: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo com opacidade */
+  backdrop-filter: blur(10px); /* Desfoque do efeito de vidro */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+    border-radius: 20px;
+    padding: 1rem;
+    margin-top: 2rem;
+    justify-content: space-between;
+
+    background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo com opacidade */
+  backdrop-filter: blur(10px); /* Desfoque do efeito de vidro */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.column {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+:root{
+    background-image: url('/src/img/fundo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+}
+
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    button {
+        margin-top: 0.5rem;
+    }
+
+    input {
+        max-width: 300px;
+        /* Limitar a largura do input para evitar que fique muito largo */
+        margin-bottom: 0.5rem;
+        width: 100%;
+        /* Utilizar toda a largura disponível */
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        /* Ajuste a altura conforme necessário */
+    }
+
+    .input-with-icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* Alinhar elementos ao espaço entre eles */
+        margin-bottom: 0.5rem;
+        /* Adicionar uma margem inferior para separação */
+    }
+
+    .input-with-icon input {
+        flex: 1;
+        margin-right: 0.5rem;
+        /* Reduzir a margem para melhor espaçamento em dispositivos móveis */
+    }
+
+    .input-with-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0.2rem 0.5rem;
+        /* Reduzir o espaçamento do botão */
+    }
+
+    .company-info {
+        flex-direction: column;
+        /* Empilhar as informações em dispositivos móveis */
+        align-items: center;
+        text-align: left;
+    }
+
+    .center-button-container {
+        display: flex;
+        justify-content: flex-end;
+        /* Alinhar o botão no canto direito inferior */
+        margin-top: 0.5rem;
+        /* Adicionar margem superior para espaçamento */
+    }
+
+    /* Alinhar o botão no canto direito inferior da tela */
+    .input-with-icon button {
+        align-self: flex-end;
+    }
+
+    .copy {
+        margin-left: 85%;
+    }
+
+    .center-button {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .Consulta{
+        height: 100vh;
+    }
+}
