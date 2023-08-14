@@ -124,6 +124,9 @@ button {
     height: 90vh;
 }
 
+.aguarde{
+    color: red;
+}
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {

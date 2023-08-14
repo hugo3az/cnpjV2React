@@ -1,12 +1,12 @@
 import Consulta from './API/consulta';
 import React from 'react';
-/* import './API/consulta.css'; */ // Importe o CSS que contém os estilos da imagem de fundo
-
-
+/* import Footer from './footer/footer';
+ */
 function App() {
   return (
     <div className="App">
       <Consulta/>
+      {/* <Footer/> */}
     </div>
   );
 }
