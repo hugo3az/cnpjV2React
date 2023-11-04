@@ -51,6 +51,14 @@ function Consulta() {
         }
         try {
             const response = await axios.get(`https://publica.cnpj.ws/cnpj/${cnpj}`);
+            
+            // Check for a 404 status code and display a custom message
+        if (response.status === 404) {
+            setErrorMessage('CNPJ não encontrado na base de dados.');
+            setLoading(false);
+            return;
+        }
+            
             setCompanyData(response.data);
             setShowData(true);
             setRemainingConsultations(remainingConsultations - 1);
@@ -143,7 +151,7 @@ function Consulta() {
                             </div>
                             <div>
                                 <label>INSCRIÇÃO ESTADUAL:</label>
-                                <input type="text" readOnly value={companyData.estabelecimento.inscricoes_estaduais[0].inscricao_estadual} />
+                                <input type="text" readOnly value={companyData?.estabelecimento?.inscricoes_estaduais[0]?.inscricao_estadual} />
                                 <button className='copy' onClick={() => handleCopyClick(companyData.estabelecimento.inscricoes_estaduais[0].inscricao_estadual)}>
                                     <RiFileCopy2Line />
                                 </button>
